@@ -735,8 +735,8 @@ footer i{
         background-color: rgb(158, 92, 156);
         display: flex;
         width: 100%;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-bottom: 3.2rem;
+        
     }
     header h1 {
         width: 2rem;
@@ -750,20 +750,23 @@ footer i{
         transform: none;
       }
     .nav{
-        background-color: rgb(158, 92, 156);
-        height: 100%;
+        background-color: transparent;
+        height: 10%;
         overflow-y: none;
-        position: center;
-        width: 100%;
+        position: absolute;
+        width: 90%;
+        transform: translate3d(0px, 0px, 0px);
+        margin-left: 10rem;
       }
     .nav ul{
-        margin:1rem;padding:1rem;
+        margin:rem;
+        padding:0.5rem;
     }
     .nav ul li { 
         list-style: none;
         text-align:center;
         color: black;
-        font-size: 21px;
+        font-size: 24px;
         height: 1.1rem;
         color:#000;
         font-weight:bold;
@@ -778,12 +781,6 @@ footer i{
     }
     .hamburger{
         display: none;
-    }
-    header img{
-        width: 4rem;
-        height: 4rem;
-        margin-left: 1rem;
-        border-radius: 10px;
     }
 
     /*titulos*/
