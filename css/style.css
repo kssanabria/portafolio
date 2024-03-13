@@ -464,7 +464,7 @@ footer i{
 @media (min-width: 1023px) {
     /*Barra de Navegación*/
     header{
-        padding-bottom: 3.2rem;
+        padding-bottom: 0;
     }
     header h1 {
         font-size: 60px;
@@ -475,10 +475,12 @@ footer i{
     }
     .nav{
         display: block !important;
-        height: 9%;
+        position: relative;
+        height: 100%;
         width: 100%;
         transform: translate3d(0px, 0px, 0px);
         text-align: center;
+        margin-top: -2rem;
     }
     .nav ul{
         padding:0.5rem;
