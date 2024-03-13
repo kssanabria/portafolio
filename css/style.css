@@ -21,11 +21,12 @@ header h1 {
 }
 .nav.is_active{
     transform: translate3d(0px, 0px, 0px);
+    height: 12%;
   }
 .nav{
     background-color: rgb(158, 92, 156);
     bottom: 0;
-    height: 11%;
+    height: 12%;
     left: 0rem;
     overflow-y: scroll;
     position: fixed;
@@ -97,12 +98,6 @@ header h1 {
 	transform:translateY(-200%) rotate(135deg) !important;
 }
   
-header img{
-    display: none;
-    width: 2rem;
-    height: 3rem;
-    border-radius: 10px;
-}
 
 /*titulos*/
 h2{
@@ -130,7 +125,7 @@ h2{
 }
 
 .acercaDeMi img{
-    width: 23rem;
+    width: 100%;
 }
 
 /*Habilidades*/
@@ -466,98 +461,58 @@ footer i{
         font-size: 20px;
     }
 }
-
-
 @media (min-width: 1023px) {
     /*Barra de Navegación*/
     header{
-        background-color: rgb(158, 92, 156);
-        display: flex;
-        width: 100%;
         padding-bottom: 3.2rem;
-        
     }
     header h1 {
-        width: 2rem;
-        height: 2rem;
-        margin-left: 3rem;
-        font-size: 70px;
-        padding-top: 0;
+        font-size: 60px;
     }
     .nav.is_active{
         display: none;
         transform: none;
-      }
+    }
     .nav{
-        background-color: transparent;
-        height: 10%;
-        overflow-y: none;
-        position: absolute;
-        width: 90%;
+        display: block !important;
+        height: 9%;
+        width: 100%;
         transform: translate3d(0px, 0px, 0px);
-        margin-left: 10rem;
-      }
+        text-align: center;
+    }
     .nav ul{
-        margin:rem;
         padding:0.5rem;
     }
     .nav ul li { 
-        list-style: none;
-        text-align:center;
-        color: black;
-        font-size: 24px;
-        height: 1.1rem;
-        color:#000;
-        font-weight:bold;
-    }
-    .nav ul li a{
-        text-decoration:none;
-        color:black;
-    }
-    .nav ul li a:hover{
-        text-decoration:none;
-        color: black;
+        font-size: 21px;
+        margin-right: 1rem;
     }
     .hamburger{
         display: none;
     }
-
     /*titulos*/
     h2{
-        margin-top: 2rem;
-        text-align: center;
-        font-size: 36px;
+        font-size: 10px;
     }
     /*Acerca de mi*/
     .acercaDeMi {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        margin-left: 3rem;
-        margin-right: 3rem;
+        margin: 2rem 3rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
-
     .acercaDeMi p {
-        width: 100%;
-        text-align: justify;
+        width: 90%;
         margin-right: 1rem;
         align-content: center;
         padding-top: 1rem;
-        font-size: 21px;
+        font-size: 17px;
     }
-
-
     .acercaDeMi img{
-        width: 100%;
-        margin-left: 3rem;
+        width:100%;
+        margin-left: 0;
     }
-
-
     /*Habilidades*/
     .habilidadesCompletas{
-        background-color: rgba(158, 92, 156, 0.50);
         padding-top: 2rem;
         margin-left: 2rem;
         margin-right: 2rem;
@@ -567,13 +522,13 @@ footer i{
         margin-top: 2rem;
         margin-bottom: 2rem;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 40% 30% 30%;
         padding-bottom: 2rem;
         place-items: center;
     }
     .habilidades p{
         padding-right: 1rem;
-        font-size: 16px;
+        font-size: 18px;
         text-align: justify;
         padding-left: 1rem;
     }
@@ -581,17 +536,17 @@ footer i{
         padding-top: 1rem;
         padding-left: 3rem;
         padding-right: 1rem;
-        font-size: 16px;
-        text-align: justify;
+        font-size: 18px;
     }
     .habilidades img{
         width: 100%;
         margin-left: 0;
+        padding-right: 2rem;
     }
     .habilidades a{
         display: list-item;
         list-style: none;
-        font-size: 16px;
+        font-size: 15px;
         padding-left: 0rem;
         width: 100%;
         margin-left: 0;
@@ -599,79 +554,56 @@ footer i{
 
     }
     .habilidades i {
-        font-size: 30px;
-        padding-right: 0rem;
+        font-size: 25px;
+        padding-right: 1rem;
+    }
+    .habilidadesPorcentaje{
+        width: 100%;
+        padding-right: 0.5rem;
     }
     .habilidad{
         display: grid;
-        grid-template-columns: 30% 70%;
-        width: 100%;
+        grid-template-columns: 50% 50%;
     }
 
     /*Portafolio*/
     .portafolio{
-        display: grid;
         padding-top: 2rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
         grid-template-columns: 32% 32% 32%;
-        font-size: 21px;
-        text-align: center;
-        place-content: center;
-    
+        font-size: 17px;
+        column-gap: 1.5rem;
     }
-
-    .portafolio .proyectoDulce {
-        background-color: rgba(158, 92, 156, 0.50);
-        padding: 2rem 1rem;
+    .proyectoDulce {
+        padding: 2rem 0rem;
         border-radius: 3rem;
         width: fit-content;
-        height: 35rem;
+        height: fit-content;
     }
     .proyectoDulce img{
         margin-top: 1rem;
         margin-bottom: 2rem;
     }
-
     .proyectoDulce i{
         margin-top: 1rem;
         font-size: 40px;
-        color: #000;
-    }
-
-    .portafolio .proyectoEnProgeso1{
-        background-color: rgba(158, 92, 156, 0.50);
-        padding: 2rem 1rem;
-        margin-left: 0.7rem;
-        border-radius: 3rem;
-        width: fit-content;
-        height: 35rem;
     }
     .proyectoEnProgeso1 img{
         margin-top: 7rem;
     }
-    .portafolio .proyectoEnProgeso2{
-        background-color: rgba(158, 92, 156, 0.50);
-        padding: 2rem 1rem;
-        margin-left: 0.7rem;
-        border-radius: 3rem;
-        width: fit-content;
-        height: 35rem;
-    }
     .proyectoEnProgeso2 img{
         margin-top: 6rem;
     }
-
     /*Contacto*/
     .contacto{
         margin-top: 2rem;
         margin-bottom: 2rem;
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding-bottom: 2rem;
         padding-left: 1rem;
         padding-right: 1rem;
-        font-size: 21px;
+        font-size: 18px;
         margin-left: 2rem;
     }
 
@@ -691,42 +623,29 @@ footer i{
         font-size: 30px;
         margin-right: 1rem;
     }
-
     .contacto img{
         width: 231.474px;
         height: 181.469px;
-        margin-left: 12rem;
+        margin-left: 6rem;
     }
-
     .contacto form{
         margin-top: 0.5rem;
-        font-family: "Raleway";
         margin-left: 1rem;
     }
-
     .contacto .campo{
-        display: flow-root;
-        width: 560px;
         height: 48px;
         border-radius: 10px;
-        border: 1px solid #000;
-        background: #F5F5F5;    
-        color: #000;
-        font-size: 21px;
+        font-size: 18px;
         padding-left: 2rem;
         margin-bottom: 1rem;
     }
 
     .contacto textarea{
-        width: 560px;
+        width: 90%;
         height: 128px;
-        border-radius: 10px;
-        border: 1px solid #000;
-        background: #F5F5F5;
         display: flex;
-        color: #000;
-        font-size: 21px;
-        padding-top: 4.5rem;
+        font-size: 18px;
+        padding-top: 3rem;
         padding-left: 2rem;
         margin-bottom: 1rem;
     }
@@ -734,39 +653,20 @@ footer i{
         width: 208px;
         height: 63px;
         border-radius: 10px;
-        border: 1px solid rgba(158, 92, 156, 0.50);
-        background: rgba(158, 92, 156, 0.50);
-        color: #000;
-        font-size: 21px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 300ms ease-in-out;
+        font-size: 18px;
         margin-left: 1rem;
     }
-
     /*Footer*/
     footer{
-        background-color: rgb(158, 92, 156);
-        display: inline-table;
-        width: 100%;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
         font-size: 21px;
-        vertical-align: middle;
-        text-align: center;
     }
-
     footer p{
-        display: inline;
-        margin-right: 1rem;
-        font-weight: bold;
+        color: black;
     }
     footer a{
         font-size: 30px;
-        color: #000;
         margin-right: 0.5rem;
     }
-
     footer i{
         padding-top: 0.5rem;
     }
